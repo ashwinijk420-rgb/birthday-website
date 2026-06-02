@@ -1,0 +1,51 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    cursor: url('https://cur.cursors-4u.net/symbols/sym-9/sym847.cur'), auto;
+}
+
+/* Custom animations */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+.floating {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Three.js container styling */
+#threejs-container {
+    pointer-events: none;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #db2777;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #be185d;
+}
+
+/* Gallery Hover Effect */
+#gallery img {
+    cursor: zoom-in;
+}
+
+/* Card hover animation */
+.transform:hover {
+    box-shadow: 0 20px 25px -5px rgba(219, 39, 119, 0.1), 0 10px 10px -5px rgba(219, 39, 119, 0.04);
+}
